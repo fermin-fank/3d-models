@@ -19,10 +19,10 @@
         }
         .project-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             padding: 20px;
-            max-width: 1800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .project-card {
@@ -46,7 +46,7 @@
         }
         model-viewer {
             width: 100%;
-            height: 800px; /* Adjust height as needed */
+            height: 600px; /* Adjust height as needed */
             background-color: #e0e0e0;
             border-bottom: 1px solid #ddd;
         }
@@ -55,6 +55,48 @@
 <body>
     <h1>My 3D Projects Portfolio</h1>
 
+        <div class="project-card">
+            <h2>Project: Mesa 60 x 100/h2>
+            <model-viewer
+                src="3d/Mesa ratona 60x100x40.glb"
+                alt="mesa"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                shadow-intensity="1"
+                camera-controls
+                auto-rotate
+                exposure="1.0"
+                interaction-prompt="auto"
+                camera-orbit="0deg 90deg 0.9m"
+                min-camera-orbit="auto auto 0.4m"
+                max-camera-orbit="auto auto 1.8m"
+                field-of-view="40deg"
+                environment-image="neutral"
+            ></model-viewer>
+            <p>A powerful and precise industrial robot arm, perfect for automation tasks. Explore its range of motion.</p>
+        </div>
+    
+        <div class="project-card">
+            <h2>Project: Mesa 74 x 120/h2>
+            <model-viewer
+                src="3d/Mesa ratona 74x120x40.glb"
+                alt="mesa"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                shadow-intensity="1"
+                camera-controls
+                auto-rotate
+                exposure="1.0"
+                interaction-prompt="auto"
+                camera-orbit="0deg 90deg 0.9m"
+                min-camera-orbit="auto auto 0.4m"
+                max-camera-orbit="auto auto 1.8m"
+                field-of-view="40deg"
+                environment-image="neutral"
+            ></model-viewer>
+            <p>A powerful and precise industrial robot arm, perfect for automation tasks. Explore its range of motion.</p>
+        </div>
+    
     <div class="project-container">
         <div class="project-card">
             <h2>Proyecto: Armario Margaret</h2>
