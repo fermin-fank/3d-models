@@ -55,7 +55,28 @@
 <body>
     <h1>My 3D Projects Portfolio</h1>
       <div class="project-container">
-          
+
+          <div class="project-card">
+            <h2>Project: Mesa Vuelo 1200 x 800 x 40mm</h2>
+            <model-viewer
+                src="3d/Mesa Vuelo 120x80x40.glb"
+                alt="mesa"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                shadow-intensity="1"
+                camera-controls
+                auto-rotate
+                exposure="1.0"
+                interaction-prompt="auto"
+                camera-orbit="-53.74deg 62deg 3.31m"
+                min-camera-orbit="auto auto 0.4m"
+                max-camera-orbit="auto auto 1.8m"
+                field-of-view="30deg"
+                environment-image="neutral"
+            ></model-viewer>
+            <p>Mesa ratona con tapa volando, base retraida y patas en angulo</p>
+        </div>
+    
         <div class="project-card">
             <h2>Project: Mesa 1200 x 745 x 40mm</h2>
             <model-viewer
